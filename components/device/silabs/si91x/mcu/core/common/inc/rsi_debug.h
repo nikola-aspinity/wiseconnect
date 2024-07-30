@@ -31,7 +31,7 @@ void Board_Debug_Init(void);
 void Board_UARTPutSTR(uint8_t *ptr);
 uint8_t Board_UARTGetChar(void);
 void Board_UARTPutChar(uint8_t ch);
-
+#undef DEBUG_UART
 #ifndef IOSTREAM_USART
 #ifdef DEBUG_UART
 #define DEBUGINIT()   Board_Debug_Init()
