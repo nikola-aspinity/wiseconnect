@@ -27,9 +27,7 @@
 #include "sl_si91x_driver_gpio.h"
 #include "rsi_retention.h"
 #include "rsi_rom_egpio.h"
-#if defined(DEBUG_UART)
 #include "rsi_debug.h"
-#endif // DEBUG_UART
 
 /*******************************************************************************
  *******************************   DEFINES   ***********************************
