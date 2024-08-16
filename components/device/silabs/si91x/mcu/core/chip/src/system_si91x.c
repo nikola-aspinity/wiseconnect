@@ -69,7 +69,7 @@ void SystemCoreClockUpdate(void) /* Get Core Clock Frequency      */
 {
   retention_boot_status_word_t *retention_reg = (retention_boot_status_word_t *)MCURET_BOOTSTATUS;
   /*Updated the default SOC clock frequency*/
-  SystemCoreClock = DEFAULT_32MHZ_RC_CLOCK;
+  // SystemCoreClock = DEFAULT_32MHZ_RC_CLOCK;
 #if (defined(RAM_COMPILATION) && defined(SLI_SI91X_MCU_COMMON_FLASH_MODE))
   /*Initialize QSPI for RAM based execution for common flash boards  */
   RSI_FLASH_Initialize();
